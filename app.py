@@ -10,8 +10,12 @@ import pickle
 model = load_model('image_caption_generator.h5')
 
 # Load vocabulary
-with open('vocab.npy', 'rb') as f:
-    vocab = np.load(f, allow_pickle=True).item()
+with open('updated_vocab.npy', 'rb') as f:
+    # vocab = np.load(f, allow_pickle=True).item()
+    vocab_array = np.load('updated_vocab.npy', allow_pickle=True)
+    vocab = {word: idx for word, idx in vocab_array}
+
+
 
 max_length = 30 
 
