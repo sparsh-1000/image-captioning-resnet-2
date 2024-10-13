@@ -16,4 +16,5 @@ env/
 # Ignore other temporary files
 *.log
 .DS_Store
-.vscode/settings.json
+.vscode/*
+debug/*

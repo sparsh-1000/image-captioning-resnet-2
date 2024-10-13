@@ -50,3 +50,4 @@ if uploaded_file is not None:
     if st.button("Generate Caption"):
         caption = generate_caption(image)
         st.write("Generated Caption:", caption)
+
