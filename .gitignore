@@ -9,9 +9,9 @@ __pycache__/
 venv/
 env/
 
-# Ignore data files
-*.h5
-*.npy
+# # Ignore data files
+# *.h5
+# *.npy
 
 # Ignore other temporary files
 *.log
